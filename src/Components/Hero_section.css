@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --primary-violet:rgb(159,105,242);
+    --orange:#FF725E;
+    --text_color:rgb(80,85,90);
+}
+.hero_section_container_whatsup{
+    position: relative;
+}
+.circle_image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -33;
+    width:650px;
+    height:550px;
+   
+}
+.whatsup_icon_contact{
+color:rgb(26, 201, 26);
+font-size: 50px !important;
+    position: absolute;
+    right: 9%;
+    z-index: 999;
+    cursor: pointer;
+position: fixed;
+bottom: 6%;
+}
+.hero_section_all{
+    background-color: rgba(238, 251, 255, 0.425);
+}
+
+.hero_section_banner{
+  overflow: hidden;
+    width: 100%;
+    height:auto;
+    background-color: rgba(238, 251, 255, 0.425);
+}
+
+.rating_text_p{
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: black;
+   
+}
+.rating_text{
+    font-family: "Poppins", sans-serif;
+    padding: 3px 20px;
+    font-size:14px;
+    color: black;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.enroll_h3{
+    font-size: 45px;
+    font-weight: unset;
+    font-family: "Nunito", sans-serif;
+    color: black;
+    line-height:1.5;
+}
+
+.trainer_images{
+    width: 150px;
+}
+.world_span{
+    font-weight:bold;
+    font-size: 45px;
+}
+
+.design{
+color:var(--primary-violet);
+font-weight: 800;
+
+}
+.design {
+    display: inline-block;
+    position: relative;
+    color: rgb(159, 105, 242);
+}
+
+.design::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(159, 105, 242);
+    transform-origin: bottom left;
+    animation: underline 1s linear infinite; /* Adjust animation duration */
+}
+
+@keyframes underline {
+    0% {
+        transform: scaleX(0);
+        transform-origin: bottom left;
+    }
+    25% {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+    50% {
+        transform: scaleX(1);
+        transform-origin: bottom right; /* Change transform-origin */
+    }
+    75% {
+        transform: scaleX(0);
+        transform-origin: bottom right; /* Change transform-origin */
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: bottom left;
+    }
+}
+
+
+
+
+.education{
+    font-weight: 800;
+}
+.check_para_container{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.check_btn_span{
+    height: 40px;
+    padding: 10px 20px;
+margin-top: 30px;
+    border-radius: 20px;
+    background-color:#FF725E;
+    color:white;
+    transition: 1s;
+    cursor:pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.check_btn_span:hover{
+    color: white;
+    background-color:#7F43D3 ;
+    transition: 1s;
+}
+
+.Vector_images{
+    width:100%;
+}
+.admission_h4{
+    font-size: 35px;
+    color: black;
+    font-weight: 500;
+}
+
+@media only screen and (max-width:590px) {
+
+}
+
+@media only screen and (max-width:430px) {
+    .enroll_h3{
+        font-size: 32px !important;
+        font-weight: 600 !important;
+       
+        
+    }
+    .world_span{
+        font-size: 25px; 
+    }
+    .admission_h4{
+        font-size: 23px;
+        font-weight: unset;  
+    }
+}

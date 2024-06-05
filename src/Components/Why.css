@@ -1,0 +1,138 @@
+.why_bg{
+  
+  position: relative;
+}
+
+
+.why_h1{
+    position: relative;
+    display: inline-block;
+    color: black;
+    font-size: 28px;
+    font-weight: 600;
+}
+.why_h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -15px; 
+    width: 21%; 
+    height: 6px; 
+    background-color: var(--primary-violet);
+
+}
+/* .vector_card_container{
+    display: flex;
+    width: 100%;
+    background-color: rgb(243,243,247);
+} */
+/* .vector_card_image{
+    width: 100%;
+} */
+.vectot_p{
+    font-size:18px;
+    clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+    
+}
+.vector_card_image_4{
+float: right;
+margin-top: -20px;
+}
+.vector_card_content {
+    border: 1px solid black;
+
+}
+
+
+.why_bg_icon{
+position: absolute;
+z-index: -100;
+width:100px;
+/* border: 1px solid black; */
+left: 0;
+top: 0;
+}
+
+.cross-card{
+    width: 100%;
+  border-radius: 10px;
+    height: 253px;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(199, 159, 255, 1);
+  
+  }
+  .cross-card-img{
+    width: 60%;
+    filter: brightness(110%);
+    filter: contrast(100%);
+    filter: saturate(100%);
+  }
+  .cross-over-lay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
+    display: flex;
+    align-items: center;
+    background: rgba(243, 243, 247, 1);
+    /* clip-path: polygon(0% 0%, 44.1% 0%, 68.2% 100.3%, 0% 100%); */
+    z-index: -1;
+  }
+  .cross-over-lay-text{
+    width: 50%;
+  }
+
+  @media only screen and (max-width:345px) {
+    .placement_assurance{
+        font-size: 14px;
+    }
+    .placement_assurance_p{
+      font-size: 13px;
+    }
+    .placement_assurance_col{
+      width:auto;
+    }
+    .cross-card-img_4{
+      width:40%;
+    }
+    
+  }
+  @media only screen and (max-width:430px) {
+    .why_h1{
+        font-size: 25px;
+    }
+    .placement_assurance{
+      font-size: 14px;
+  }
+  .placement_assurance_p{
+    font-size: 13px;
+  }
+  .placement_assurance_col{
+    width:auto;
+  }
+  .why_h1{
+    font-weight: 500;
+    font-size: 25px;
+  }
+  
+    
+  }
+
+  @media only screen and (max-width:540px) {
+  
+  .why_card_h5{
+    font-weight: 500 !important;
+  }
+  .why_p_{
+    font-size:16px;
+  }
+  .why_card_h5{
+    font-weight: 500;
+  }
+    .why_bg_icon{
+      display: none;
+    }
+  }

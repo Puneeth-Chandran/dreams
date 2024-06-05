@@ -1,0 +1,87 @@
+.project{
+    color: black;
+   
+    position: relative;
+   
+}
+.frame_image_1{
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 8%;
+}
+.frame_image_2{
+    position: absolute;
+bottom: 1%;
+    left:0;
+    width: 10%;
+  filter: contrast(140%);
+}
+#profolio_2{
+    background-color: rgb(244,252,255);
+}
+.project_image_1{
+    width:100%;
+}
+
+
+.project_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.project_h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.project_p{
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300 !important; 
+    text-align: justify;
+
+   
+ 
+}
+.project_image_2{
+    height: 573px;
+}
+
+@media only screen and (max-width: 631px) {
+    .project_image{
+        height: 250px;
+    }
+    .project_image_2{
+        height: 250px;
+    }
+    .project_p{
+    
+        font-size: 18px;
+       
+     
+    }
+    }
+    @media only screen and (max-width: 769px) {
+       
+        .project_p{
+        
+            font-size: 16px;
+           
+         
+        }.frame_image_1{
+         display:none;
+        }
+        .frame_image_2{
+            display:none;
+        }
+        }
+
+        @media only screen and (max-width:600px) {
+           .project_h1 {
+            font-size: 25px;
+           }
+           .project_p{
+            font-size: 16px;
+        }
+            }

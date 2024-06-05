@@ -1,0 +1,86 @@
+.faq_image{
+    width:70%;
+    margin-bottom: 50px;
+}
+.faq{
+    /* background-color: rgb(234,243,250); */
+    margin-top: 80px;
+   
+}
+.rs-panel-title{
+    
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+.accordion-item{
+    border: none !important;
+}
+  .content-inner{
+    font-size: 18px !important;
+    margin-top: -15px;
+   
+  }
+  .show_btn{
+    padding: 10px 20px;
+    background-color:#FF725E;
+    color: white;
+    /* border-radius: 10px; */
+    transition: 1s;
+    border-radius: 10px;
+  }
+  .show_btn:hover{
+    background-color:#7F43D3;
+    color: white;
+    transition: 1s;
+ ;
+  }
+  .centered-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+  }
+
+.accordion-item {
+    border: none !important;
+    border: unset !important;
+  }
+  
+  .accordion-title {
+    border-bottom: none !important; 
+    border: unset !important;
+  }
+  
+  .accordion-content {
+    border-top: none !important; 
+    border: unset !important;
+  }
+  /* Add this CSS to your Faq.css file */
+.accordion-item {
+  border-bottom: none !important;
+  }
+  
+  .accordion-title {
+    border-bottom: none !important; /* Remove border */
+  }
+  
+  .accordion-content {
+    border-bottom: 1px solid rgb(227, 227, 227) !important; /* Remove border */
+  }
+  
+
+
+@media  screen and (max-width: 600px) {
+.faq_h3{
+    font-weight: 500;
+    font-size: 25px;
+}
+.faq_image{
+    width:100% !important;
+
+}
+.accordion-item{
+border:unset !important;
+}
+
+}

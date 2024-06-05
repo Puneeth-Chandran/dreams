@@ -1,0 +1,90 @@
+
+
+.navbar_body{
+    background-color: rgb(255,255,255) !important;
+   
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+.nav_container{
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 999 !important;
+   
+}
+.nav_link{
+    color:var(--text_color)  !important;
+    font-weight:500;
+    font-size: 17px;
+    text-decoration: none !important;
+    color: black !important;
+    transition: 1s;
+    padding-bottom: 3px;
+    
+}
+.nav_link:hover{
+color: #7F43D3 !important;
+transition: 1s;
+
+border-bottom:1px solid #7F43D3;
+
+}
+.nav_link:focus{
+    color: #7F43D3 !important;
+    
+    
+    border-bottom:1px solid #7F43D3;
+    }
+
+    .nav_link:focus {
+        border-bottom:1px solid #7F43D3;
+      }
+      
+
+  
+ .navbar-toggler{
+    border: none !important;
+    background: none !important;
+   
+ }
+  
+.enroll_btn{
+    padding:5px 40px;
+    border-radius:5px;
+    color:white !important;
+    transition: 1s !important;
+    background-color:#7F43D3 !important;
+    border:none;
+}
+.enroll_btn:hover{
+    background-color: #FF8C61 !important;
+    color: white !important;
+    transition: 1s !important;
+}
+.nav_link.active {
+    border-bottom:1px solid #7F43D3;
+    color:#7F43D3 !important;
+
+  }
+  
+  
+
+#basic-navbar-nav{
+    border: none !important;
+}
+.navbar-toggler:focus {
+    text-decoration: none !important;
+    outline: 0;
+ box-shadow:unset !important;
+}
+
+@media only screen and (max-width:430px) {
+   .navbar-brand{
+    width: 75%;
+   }
+   .nav_link{
+    font-weight: 500;
+   }
+
+}
+

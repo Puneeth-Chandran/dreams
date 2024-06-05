@@ -1,0 +1,87 @@
+
+
+.feedback{
+    width: 100%;
+    background-color: rgb(243,244,248);
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.feedback_Image{
+    width: 100%;
+    background-color: rgb(243,244,248);
+    height: auto;
+    border: 2px solid #FF725E;
+    border-radius: 0 80px 80px 0;
+    border-style:dashed ;
+}
+.what_h1{
+    font-size: 40px;  
+}
+.feeback_p{
+    color: var(--primary);
+    font-size: 17px;
+   
+    
+}
+
+  
+.feedback_h1 {
+    position: relative;
+    display: inline-block;
+}
+
+.feedback_h1:after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -12px; 
+    width: 40%; 
+    height: 6px; 
+    background-color: var(--primary);
+}
+.trainer_slider_container{
+    width: 90%;
+}
+
+@media only screen and (min-width: 1110px) {
+ .feeback_p,.what_h1,.trainer_slider_container{
+    margin-left: 50px;
+ }
+ .what_h1{
+    line-height:1.3;
+    font-size: 35px;
+ }
+ 
+}
+
+@media screen and (max-width: 531px) {
+  
+    .feeback_p{
+      margin-top:40px;
+    }
+    .what_h1{
+        font-weight: 500;
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width: 431px) {
+    .feedback_h1 {
+        font-size: 25px;
+    }
+    .feedback_h1{
+        top: -20px;
+    }
+    .feeback_p{
+      margin-top:20px;
+    }
+  
+}
+
+@media only screen and (min-width: 1200px) {
+  #testimonial{
+    margin-top: 100px;
+  }
+}

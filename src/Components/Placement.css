@@ -1,0 +1,50 @@
+.placement_h1{
+    font-family: "Nunito", sans-serif;
+    font-size: 35px;
+    color: black;
+}
+
+.placement_p{
+   
+    color: var(--primary);
+    font-size: 45px;
+    font-weight: 800;
+}
+.how_p{
+    font-size: 18px;
+    color: black; 
+}
+.tick{
+    color: var(--green);
+
+}
+.placement_p_li{
+    font-size: 18px;
+    line-height: 150%;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+.placement_image{
+    width: 100%;
+}
+
+@media only screen and (max-width:600px) {
+.placement_h1{
+    font-size: 16px;
+}
+.placement_p{
+    font-size: 25px;
+}
+.placement_p_li{
+    font-size: 16px;
+}
+}
+
+@media only screen and (min-width:1000px) {
+   
+    .placement_p_li{
+        line-height:3;
+    }
+   
+    }

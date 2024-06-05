@@ -1,0 +1,156 @@
+
+:root{
+    --pop :"Poppins", sans-serif;
+}
+
+.free_p{
+    color: var(--primary);
+    font-size:18px;
+    font-family: "Poppins", sans-serif;
+    color: var(--primary);
+}
+.inr_h3{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.what_p{
+    font-size: 32px;
+    font-family: var(--pop);
+    color: black;
+}
+.fees_list{
+border: 4px solid #FF725E;
+border-radius: 20px;
+font-family: "Poppins", sans-serif;
+color: black;
+}
+
+
+.fee_li{
+    font-size: 22px;
+    
+    font-family: var(--pop);
+    border-radius: 20px;
+}
+
+.calender_icon{
+font-size: 35px !important;
+color: rgb(83, 81, 81);
+}
+.icons_section{
+    position: relative;
+    font-size: 22px;
+    
+}
+
+.calender_number{
+    position: absolute;
+    top: 10px;
+    color: black;
+    left: 8px;
+    font-size: 18px;
+}
+.twele{
+    font-size: 22px; 
+}
+.overview_h6{
+    font-size: 28px;
+    color: black;
+}
+.overview_li{
+    font-size: 20px; 
+    color: black;
+   
+}
+
+.join_us_span{
+    color: var(--green);
+  font-size: 26px;
+  font-weight:600;
+   
+}
+
+.join_p_span{
+    font-size: 18px !important;
+   color: black;
+font-family: var(--pop);
+}
+.enroll_btn_fee{
+    color:white !important;
+    background-color: #FF725E !important;
+    font-family: var(--pop) !important;
+    border: none !important;
+    padding: 10px 40px !important;
+    transition: 1s !important;
+    border-radius: 30px !important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.enroll_btn_fee:hover {
+    background-color: #7F43D3 !important;
+    color: white !important;
+    transition: 1s !important;
+}
+.fee_list{
+    line-height: 1.5;
+}
+
+@media screen and (max-width:600px) {
+    .join_p_span{
+        font-size: 16px !important;
+    }
+    .inr_h3{
+        font-weight: 500 !important;
+        font-size: 25px !important;
+    }
+    .fee_list{
+        line-height:unset;
+    }
+    .overview_h6{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    
+    .overview_h6{
+        font-weight: 500 !important; 
+    }
+    .icons_section{
+font-size: 20px;
+    }
+    .twele{
+        font-size: 20px;   
+    }
+    .join_p_span{
+        /* font-size: 25px !important; */
+    }
+}
+
+@media screen and (max-width:431px) {
+    .what_p {
+        font-size: 25px;
+    }
+   
+    .fee_li{
+        font-size: 15px;
+    }
+   
+    .overview_li{
+        font-size: 15px;
+    }
+    .join_p {
+        font-size: 16px;
+    }
+    .calender_icon{
+        font-size: 35px !important;
+    }
+    .calender_number{
+        left:5px;
+        top:6px;
+        font-size:20px;
+
+    }
+   
+}
+

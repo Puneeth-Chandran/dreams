@@ -1,0 +1,21 @@
+.accodian_flex{
+    display: flex;
+    justify-content: space-between;
+   font-size: 20px !important;
+   cursor: pointer;
+}
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    
+  }
+  
+  .accordion-content.active {
+    max-height: 200px; /* Adjust this value according to your content */
+  }
+  
+  .content-inner {
+    padding: 10px; /* Adjust padding as needed */
+  }
+  

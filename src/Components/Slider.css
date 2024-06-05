@@ -1,0 +1,58 @@
+.learning_card{
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+}
+
+.slide {
+   position: relative;
+  }
+ .slick-next:before, .slick-prev:before {
+  display:none !important;
+ }
+ .arrow_color{
+  color:#7F43D3;
+ }
+
+  .learning_card_p{
+    font-size: 20px;
+    line-height: 200%;
+    color: black !important;
+  }
+  .learning_card_p_2{
+    line-height:2.6;
+  }
+  .learning_card_p_4{
+    line-height: 2.5;
+  }
+  .learning_card_p_5{
+    line-height: 2.4;
+  }
+  
+  @media only screen and (max-width: 431px) {
+   
+ .learning_card_p{
+    font-size: 15px;
+  }
+  }
+  
+  @media only screen and (max-width:731px) {
+   .slide_batch{
+display: none;
+   }
+    
+     }
+
+     @media only screen and (max-width:600px) {
+      .Module{
+  margin-top: -140px;
+      }
+      .Module{
+        font-weight: 500;
+      }
+      .learning_card_p{
+        font-size: 15px !important;
+      }
+       
+        }
+        
+     

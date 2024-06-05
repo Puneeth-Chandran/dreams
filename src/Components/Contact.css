@@ -1,0 +1,103 @@
+.contact_us_banner_container{
+     /* The image used */
+  background-image: url("./Images/colleagues-working-together-call-center-office.jpg");
+
+ 
+  min-height: 400px; 
+width: 100%;
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  position:relative;
+}
+
+.bread_grum {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    width: 100%;
+    top: 0; 
+    left: 0; 
+    background-color: rgba(0, 0, 0, 0.527);
+    cursor:pointer;
+    font-family:var(--pop);
+}
+.d_arrow{
+    font-size: 40px !important;
+}
+.contact_h3{
+  
+    color: var(--primary-violet);
+}
+.get_in_h1{
+    position: relative;
+    display: inline-block;
+    color: black;
+}
+.get_in_h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px; 
+    width: 30%; 
+    height: 6px; 
+    background-color: var(--primary-violet);
+
+}
+
+.contact_p{
+    font-size: 22px;
+    color: black;
+}
+
+.contact_input{
+    width: 100%;
+}
+
+.send_btn{
+    padding: 10px 20px !important;
+border: none !important;
+    border-radius: 20px !important;
+    background-color:#FF725E !important;
+    color:white !important;
+    cursor:pointer;
+    width: 100%;
+    transition: 1s;
+}
+.send_btn:hover{
+    background-color: #7F43D3 !important;
+    color: white !important;
+    transition: 1s;
+}
+.contact_page_icon{
+    color:#7F43D3 ;
+}
+.call_me{
+    cursor: pointer;
+    text-decoration: none !important;
+}
+@media screen and(max-width:576px){
+    .bread_grum_link{
+        font-size: 18px !important;
+    }
+ 
+}
+
+@media screen and (max-width:600px) {
+    .contact_h3{
+        font-weight: 500 !important;
+        
+    }
+    .get_in_h1{
+        font-weight: 500 !important;
+    }
+    .office{
+        font-weight: 500 !important; 
+    }
+}
