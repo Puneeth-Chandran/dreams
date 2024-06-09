@@ -19,20 +19,14 @@ import Thank_you from './Upcoming Images/thank-you 1.png'
 import './Upcoming_Batches.css'
 
 const Upcoming_Batches = () => {
-    const [open, setOpen] = useState(false);
-
+  const [open, setOpen] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [contactNumber, setContactNumber] = useState('');
-  const [workExperience, setWorkExperience] = useState('');
-  const [professionalWork, setProfessionalWork] = useState('');
   const [nameError, setNameError] = useState('');
   const [emailError, setEmailError] = useState('');
   const [contactNumberError, setContactNumberError] = useState('');
-  const [workExperienceError, setWorkExperienceError] = useState('');
-  const [professionalWorkError, setProfessionalWorkError] = useState('');
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [Submitted, setSubmitted] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -41,53 +35,55 @@ const Upcoming_Batches = () => {
   const handleClose = () => {
     setOpen(false);
   };
+
   const validateForm = () => {
-      let isValid = true;
+    let isValid = true;
 
-      if (name.trim() === '') {
-          setNameError('Name is required');
-          isValid = false;
-      } else {
-          setNameError('');
-      }
+    if (name.trim() === '') {
+      setNameError('Name is required');
+      isValid = false;
+    } else {
+      setNameError('');
+    }
 
-      if (email.trim() === '') {
-          setEmailError('Email is required');
-          isValid = false;
-      } else if (!/\S+@\S+\.\S+/.test(email)) {
-          setEmailError('Invalid email format');
-          isValid = false;
-      } else {
-          setEmailError('');
-      }
+    if (email.trim() === '') {
+      setEmailError('Email is required');
+      isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
+      setEmailError('Invalid email format');
+      isValid = false;
+    } else {
+      setEmailError('');
+    }
 
-      if (contactNumber.trim() === '') {
-          setContactNumberError('Contact number is required');
-          isValid = false;
-      } else if (isNaN(contactNumber)) {
-          setContactNumberError('Contact number must be a number');
-          isValid = false;
-      } else {
-          setContactNumberError('');
-      }
+    if (contactNumber.trim() === '') {
+      setContactNumberError('Contact number is required');
+      isValid = false;
+    } else if (isNaN(contactNumber)) {
+      setContactNumberError('Contact number must be a number');
+      isValid = false;
+    } else {
+      setContactNumberError('');
+    }
 
-     
-
-    
-
-      return isValid;
+    return isValid;
   };
 
-  const handleSubmit = () => {
-        if (validateForm()) {
-            // Form submission logic here
-            setFormSubmitted(true); // Set form submission state to true
-            handleClose();
-        }
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      const subject = encodeURIComponent('Enquiry Form Submission');
+      const body = `Name: ${name}\nEmail: ${email}\nContact Number: ${contactNumber}`;
+      const mailtoLink = `mailto:designdreamz37@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
 
-    const closeModal = () => {
-      setFormSubmitted(false);
+      setFormSubmitted(true);
+      handleClose();
+    }
+  };
+
+  const closeModal = () => {
+    setFormSubmitted(false);
   };
 
   return (
@@ -99,171 +95,115 @@ const Upcoming_Batches = () => {
       <br />
       <Container className='px-4 px-lg-0'>
         <center>
-            <h3 className='batches_h1'>Upcoming Batches - Join <span className='online'>Online!</span> </h3>
+          <h3 className='batches_h1'>Upcoming Batches - Join <span className='online'>Online!</span> </h3>
         </center>
         <Row>
-            <Col xxl={3} xl={3} lg={3} md={6} sm={12} className='p-3'>
-                <div className="batch_card_container mb-4">
-<div className="batch_heading">
-    <center>
-    <p className='p-3 Weekend_Batch'>Weekend Batch</p>
-   
-    </center>
-    
-</div>
-<div className="batch_heading_details p-3">
-  <br />
-  <br />
-
-  
-    <p  className="batch_heading_p">Sat & Sun</p>
-    <p  className="batch_heading_p">Starts on 10th March</p>
-    <p  className="batch_heading_p">Available Seats :<span className='full'> 10 Seats Left</span> </p>
-    <br />
- 
-
-</div>
-
-<div className="enquire_btn p-2">
-
-<Button variant="outlined"  className='mt-3 enquire_btn_2 mb-2'onClick={handleClickOpen}>
+          <Col xxl={3} xl={3} lg={3} md={6} sm={12} className='p-3'>
+            <div className="batch_card_container mb-4">
+              <div className="batch_heading">
+                <center>
+                  <p className='p-3 Weekend_Batch'>Weekend Batch</p>
+                </center>
+              </div>
+              <div className="batch_heading_details p-3">
+                <br />
+                <br />
+                <p className="batch_heading_p">Sat & Sun</p>
+                <p className="batch_heading_p">Starts on 10th March</p>
+                <p className="batch_heading_p">Available Seats :<span className='full'> 10 Seats Left</span> </p>
+                <br />
+              </div>
+              <div className="enquire_btn p-2">
+                <Button variant="outlined" className='mt-3 enquire_btn_2 mb-2' onClick={handleClickOpen}>
                   Enquire Now
                 </Button>
-                </div>
-                <div>
-                
-              
-                </div>
-                </div>
-            </Col>
+              </div>
+            </div>
+          </Col>
 
-
-            {/* second_card */}
-
-            <Col xxl={3} xl={3} lg={3} md={6} sm={12} className='p-3'>
-                <div className="batch_card_container mb-4">
-<div className="batch_heading">
-    <center>
-    <p className='p-3  Weekend_Batch'>Week Days Batch</p>
-   
-    </center>
-    
-</div>
-<div className="batch_heading_details p-3">
-<br />
-  <br />
-
-    <p  className="batch_heading_p">2 days a week</p>
-    <p  className="batch_heading_p">Starts on 8th March</p>
-    <p  className="batch_heading_p">Available Seats : <span className='full'>Full</span> </p>
-    <br />
-
-
-</div>
-
-<div className="enquire_btn p-2">
-
-<Button variant="outlined"  className='mt-3 enquire_btn_2 mb-2'onClick={handleClickOpen}>
+          {/* Second card */}
+          <Col xxl={3} xl={3} lg={3} md={6} sm={12} className='p-3'>
+            <div className="batch_card_container mb-4">
+              <div className="batch_heading">
+                <center>
+                  <p className='p-3 Weekend_Batch'>Week Days Batch</p>
+                </center>
+              </div>
+              <div className="batch_heading_details p-3">
+                <br />
+                <br />
+                <p className="batch_heading_p">2 days a week</p>
+                <p className="batch_heading_p">Starts on 8th March</p>
+                <p className="batch_heading_p">Available Seats : <span className='full'>Full</span> </p>
+                <br />
+              </div>
+              <div className="enquire_btn p-2">
+                <Button variant="outlined" className='mt-3 enquire_btn_2 mb-2' onClick={handleClickOpen}>
                   Enquire Now
                 </Button>
-                </div>
-                <div>
-                
-              
-                </div>
-                </div>
-            </Col>
+              </div>
+            </div>
+          </Col>
 
-        
-
-            {/* third_card */}
-
-            <Col xxl={3} xl={3} lg={3} md={6} sm={12} className='p-3'>
-                <div className="batch_card_container mb-4">
-<div className="batch_heading">
-
-    <center>
-    <p className='p-3  Weekend_Batch'>Weekend Batch</p>
-    </center>
-    
-</div>
-<div className="batch_heading_details p-3">
-<br />
-<br />
-
-    <p className="batch_heading_p">Sat & Sun</p>
-    <p className="batch_heading_p">Starts on 17th March</p>
-    <p className="batch_heading_p">Available Seats : <span className='seats'> 5 Seats Left</span></p>
-    <br />
-  
-  
-</div>
-
-<div className="enquire_btn p-2">
-
-<Button variant="outlined"  className='mt-3 enquire_btn_2 mb-2'onClick={handleClickOpen}>
+          {/* Third card */}
+          <Col xxl={3} xl={3} lg={3} md={6} sm={12} className='p-3'>
+            <div className="batch_card_container mb-4">
+              <div className="batch_heading">
+                <center>
+                  <p className='p-3 Weekend_Batch'>Weekend Batch</p>
+                </center>
+              </div>
+              <div className="batch_heading_details p-3">
+                <br />
+                <br />
+                <p className="batch_heading_p">Sat & Sun</p>
+                <p className="batch_heading_p">Starts on 17th March</p>
+                <p className="batch_heading_p">Available Seats : <span className='seats'> 5 Seats Left</span></p>
+                <br />
+              </div>
+              <div className="enquire_btn p-2">
+                <Button variant="outlined" className='mt-3 enquire_btn_2 mb-2' onClick={handleClickOpen}>
                   Enquire Now
                 </Button>
-                </div>
-                <div>
-                
-              
-                </div>
-                </div>
-            </Col>
-       
+              </div>
+            </div>
+          </Col>
 
-            {/* 4th card */}
-
-            <Col xxl={3} xl={3} lg={3} md={6} sm={12} className='p-3'>
-                <div className="batch_card_container mb-4">
-<div className="batch_heading">
-
-    <center>
-    <p className='p-3  Weekend_Batch'>Week Days Batch</p>
-    </center>
-    
-</div>
-<div className="batch_heading_details p-3">
-<br />
-<br />
-
-    <p className="batch_heading_p">2 days a week</p>
-    <p className="batch_heading_p">Starts on 20th March</p>
-    <p className="batch_heading_p">Available Seats : <span className='full'>10 Seats Left</span></p>
-    <br />
-   
-  
-</div>
-
-<div className="enquire_btn p-2">
-<Button variant="outlined"  className='mt-3 enquire_btn_2 mb-2'onClick={handleClickOpen}>
+          {/* Fourth card */}
+          <Col xxl={3} xl={3} lg={3} md={6} sm={12} className='p-3'>
+            <div className="batch_card_container mb-4">
+              <div className="batch_heading">
+                <center>
+                  <p className='p-3 Weekend_Batch'>Week Days Batch</p>
+                </center>
+              </div>
+              <div className="batch_heading_details p-3">
+                <br />
+                <br />
+                <p className="batch_heading_p">2 days a week</p>
+                <p className="batch_heading_p">Starts on 20th March</p>
+                <p className="batch_heading_p">Available Seats : <span className='full'>10 Seats Left</span></p>
+                <br />
+              </div>
+              <div className="enquire_btn p-2">
+                <Button variant="outlined" className='mt-3 enquire_btn_2 mb-2' onClick={handleClickOpen}>
                   Enquire Now
                 </Button>
-                </div>
-                <div>
-                
-              
-                </div>
-                </div>
-            </Col>
+              </div>
+            </div>
+          </Col>
         </Row>
       </Container>
 
-
-
       <Dialog open={open} onClose={handleClose}>
         <DialogTitle>
-            <div className="blue_book_container">
-          <Button style={{float:'right',marginTop:'6%',color:'white'}}  onClick={handleClose}>
-            <CloseIcon />
-          </Button>
-          <div className="booK_icon">
-           
-            <img src={Form_1_img} alt="design dreamz"  className='form_logo'/>
-         
-            
-          </div>
+          <div className="blue_book_container">
+            <Button style={{ float: 'right', marginTop: '6%', color: 'white' }} onClick={handleClose}>
+              <CloseIcon />
+            </Button>
+            <div className="booK_icon">
+              <img src={Form_1_img} alt="design dreamz" className='form_logo' />
+            </div>
           </div>
         </DialogTitle>
         <DialogContent>
@@ -300,59 +240,36 @@ const Upcoming_Batches = () => {
               error={!!contactNumberError}
               helperText={contactNumberError}
             />
-            {/* <TextField
-              label="Work Experience"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-              value={workExperience}
-              onChange={(e) => setWorkExperience(e.target.value)}
-              error={!!workExperienceError}
-              helperText={workExperienceError}
-            /> */}
-            {/* <TextField
-              label="Professional Work"
-              variant="outlined"
-              fullWidth
-              margin="normal"
-              value={professionalWork}
-              onChange={(e) => setProfessionalWork(e.target.value)}
-              error={!!professionalWorkError}
-              helperText={professionalWorkError}
-            /> */}
           </Container>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleSubmit}  className='enquire_btn_2' variant="outlined" startIcon={<ArrowDownwardIcon />} color="primary">
+          <Button onClick={handleSubmit} className='enquire_btn_2' variant="outlined" startIcon={<ArrowDownwardIcon />} color="primary">
             Submit
           </Button>
         </DialogActions>
       </Dialog>
 
-
-
-      <Dialog open={formSubmitted} onClose={handleClose} onClick={(e) => e.stopPropagation()} >
-    <DialogTitle>
-      <div className="thank_you_container">
-       
-        <Button style={{ float: 'right', color: 'white' }}  onClick={closeModal}>
-            <CloseIcon className='mt-2' />
-        </Button>
-        <div className='thank_you_image_container' >
-        <img src={Thank_you} alt="dreamz design"  className='thank_you_image'/>
-        <p className='thank_you_p'>Enquiry Submitted!</p>
-        </div>
-        </div>
-    </DialogTitle>
-    <DialogContent>
-        <p className='mb-3 mt-3'>We've received your information and will get back to you shortly.</p>
-        <p className='mb-3'>In the meantime, feel free to explore our website for more details about our UI/UX Design Course. If you have any urgent queries, contact us directly at +91-XXXXXX.</p>
-        <p className='mb-3'>We look forward to assisting you on your journey into the exciting world of UI/UX design!</p>
-    </DialogContent>
-</Dialog>
-
+      <Dialog open={formSubmitted} onClose={handleClose} onClick={(e) => e.stopPropagation()}>
+        <DialogTitle>
+          <div className="thank_you_container">
+            <Button style={{ float: 'right', color: 'white' }} onClick={closeModal}>
+              <CloseIcon className='mt-2' />
+            </Button>
+            <div className='thank_you_image_container'>
+              <img src={Thank_you} alt="dreamz design" className='thank_you_image' />
+              <p className='thank_you_p'>Enquiry Submitted!</p>
+            </div>
+          </div>
+        </DialogTitle>
+        <DialogContent>
+          <p className='mb-3 mt-3'>We've received your information and will get back to you shortly.</p>
+          <p className='mb-3'>In the meantime, feel free to explore our website for more details about our UI/UX Design Course. 
+            If you have any urgent queries, contact us directly at +919113523278.</p>
+          <p className='mb-3'>We look forward to assisting you on your journey into the exciting world of UI/UX design!</p>
+        </DialogContent>
+      </Dialog>
     </div>
-  )
+  );
 }
 
-export default Upcoming_Batches
+export default Upcoming_Batches;

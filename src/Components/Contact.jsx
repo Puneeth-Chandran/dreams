@@ -57,12 +57,12 @@ const Contact = () => {
     if (validateForm()) {
       const subject = encodeURIComponent('Contact Form Submission');
       const body = `Name: ${name}\nEmail: ${email}\nContact Number: ${contactNumber}\nMessage: ${message}`;
-      const mailtoLink = `mailto:muthuramprasad@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
+      const mailtoLink = `mailto:designdreamz37@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`;
       window.location.href = mailtoLink;
     }
     clear()
   };
-
+// const em="muthuramprasad@gmail.com";
   const validateForm = () => {
     let isValid = true;
 
@@ -169,11 +169,11 @@ const Contact = () => {
               Have a question or want to learn more? Feel free to drop us a
               message, and our team will get back to you shortly!
             </p>
-            <h4 style={{color:'black'}} className="mb-2 office"> <a href="tel:+919702699536" className="call_me"><FaPhone className="contact_page_icon" /> </a> Office Phone Number</h4>
-            <p style={{color:'black'}} className="mb-4 ms-4"> +91-98XXXXXXXXX </p>
+            <h4 style={{color:'black'}} className="mb-2 office"> <a href="tel:+919113523278" className="call_me"><FaPhone className="contact_page_icon" /> </a> Office Phone Number</h4>
+            <p style={{color:'black'}} className="mb-4 ms-4"> +91-9113523278 </p>
 
             <h4 style={{color:'black'}} className="mb-2 office"><MdOutlineEmail  className="contact_page_icon"/> Office Email</h4>
-            <p style={{color:'black'}} className="mb-4 ms-4">@mail</p>
+            <p style={{color:'black'}} className="mb-4 ms-4">designdreamz37@gmail.com</p>
           </Col>
           <Col xxl={4} xl={4} lg={4} md={12} sm={12}>
               {/* Contact form */}

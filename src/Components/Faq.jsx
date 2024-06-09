@@ -24,7 +24,7 @@ const Faq = () => {
     { question: "What You Gain?", answer: "Certified UI/UX designer status, hands-on learning, real projects, and placement assistance." },
     { question: "Tools Covered?", answer: "Learn with industry-favorite tools: Figma, FigJam, Miro, ChatGPT, and Zeplin." },
     { question: "Next Batch Start?", answer: "Upcoming batches start regularly. Check the schedule and secure your spot." },
-    { question: "More Details?", answer: "WhatsApp us at +91-9XXXXXXX. Drop a message for quick assistance!" }
+    { question: "More Details?", answer: "WhatsApp us at +919113523278. Drop a message for quick assistance!" }
   ];
 
   const visibleAccordionItems = showAll ? accordionItems : accordionItems.slice(0, accordionItems.length - 4);

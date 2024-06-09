@@ -89,7 +89,7 @@ const Footer = () => {
 
 <Col xxl={3} xl={3} lg={3} md={12} sm={12} className='p-3'>
 
-<a href="tel:+919702699536" className="call_me">
+<a href="tel:+919113523278" className="call_me">
 <Button variant="outlined"  className='request_btn'>Request To Call</Button>
 </a>
 
@@ -108,7 +108,7 @@ const Footer = () => {
 
       
       </div>
-      <a href="https://wa.me/+919xxxxxxxx" style={{textDecoration:'none',cursor:'pointer',color:'black'}} target='_blank'
+      <a href="https://wa.me/+919113523278" style={{textDecoration:'none',cursor:'pointer',color:'black'}} target='_blank'
       
       >
       <div class="w-app">
