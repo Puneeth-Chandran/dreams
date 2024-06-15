@@ -87,11 +87,11 @@ const Projects = () => {
         </div>
       </Container>
       
-      <img src={Frame} alt=""   className="frame_image_1"/>
+      {/* <img src={Frame} alt=""   className="frame_image_1"/>
  
 
    
-      <img src={Frame} alt=""  className="frame_image_2"/>
+      <img src={Frame} alt=""  className="frame_image_2"/> */}
    
       </div>
     </div>
