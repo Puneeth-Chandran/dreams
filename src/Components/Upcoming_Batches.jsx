@@ -157,7 +157,7 @@ const Upcoming_Batches = () => {
                 <br />
                 <br />
                 <p className="batch_heading_p">Sat & Sun</p>
-                <p className="batch_heading_p">Starts on 26th July</p>
+                <p className="batch_heading_p">Starts on 6th July</p>
                 <p className="batch_heading_p">Available Seats : <span className='seats'> 5 Seats Left</span></p>
                 <br />
               </div>
