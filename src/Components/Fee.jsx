@@ -14,7 +14,7 @@ const fee = () => {
         <Row>
           <Col xxl={10} xl={10} lg={10} md={12} sm={12} className="mb-5">
             <p className="free_p mt-5 ms-3">Program fee</p>
-            <h2 className="inr_h3 mb-5 ms-3">INR 31,999/-</h2>
+            <h2 className="inr_h3 mb-5 ms-3">INR 12,000/-</h2>
             <p className="what_p mb-2 ms-3">What's Included:</p>
             <div className="fees_list p-3 ms-2">
               <ul className="justify-content-start">
@@ -48,7 +48,7 @@ const fee = () => {
             </Col>
             <Col xxl={5} xl={5} lg={5} md={12} sm={12}>
               <div className="icons_section mb-3 mt-5 me-3">
-                <CalendarTodayIcon className="calender_icon" /> 12 -3-2024
+                <CalendarTodayIcon className="calender_icon" /> 23 -06-2024
                 <div className="text_in_calender me-3">
                   <p className="calender_number">12</p>
                 </div>
@@ -63,7 +63,7 @@ const fee = () => {
         <Col xxl={12} xl={12} lg={12} md={12} sm={12}>
           <p className="join_p_span mt-5 mb-5">
           
-            <span className="join_us_span">Join Us</span> us on 12-3-2024 (Tuesday)
+            <span className="join_us_span">Join Us</span> us on 23-06-2024 (Sunday)
             at 12:00 PM for a sneak peek into UI/UX design. Explore fundamental
             concepts and get a glimpse of the exciting journey ahead!
           </p>

@@ -109,7 +109,7 @@ const Upcoming_Batches = () => {
                 <br />
                 <br />
                 <p className="batch_heading_p">Sat & Sun</p>
-                <p className="batch_heading_p">Starts on 10th March</p>
+                <p className="batch_heading_p">Starts on 29th June</p>
                 <p className="batch_heading_p">Available Seats :<span className='full'> 10 Seats Left</span> </p>
                 <br />
               </div>
@@ -132,8 +132,8 @@ const Upcoming_Batches = () => {
               <div className="batch_heading_details p-3">
                 <br />
                 <br />
-                <p className="batch_heading_p">2 days a week</p>
-                <p className="batch_heading_p">Starts on 8th March</p>
+                <p className="batch_heading_p">3 days a week</p>
+                <p className="batch_heading_p">Starts on 25th June</p>
                 <p className="batch_heading_p">Available Seats : <span className='full'>Full</span> </p>
                 <br />
               </div>
@@ -157,7 +157,7 @@ const Upcoming_Batches = () => {
                 <br />
                 <br />
                 <p className="batch_heading_p">Sat & Sun</p>
-                <p className="batch_heading_p">Starts on 17th March</p>
+                <p className="batch_heading_p">Starts on 26th July</p>
                 <p className="batch_heading_p">Available Seats : <span className='seats'> 5 Seats Left</span></p>
                 <br />
               </div>
@@ -180,8 +180,8 @@ const Upcoming_Batches = () => {
               <div className="batch_heading_details p-3">
                 <br />
                 <br />
-                <p className="batch_heading_p">2 days a week</p>
-                <p className="batch_heading_p">Starts on 20th March</p>
+                <p className="batch_heading_p">3 days a week</p>
+                <p className="batch_heading_p">Starts on 1st July</p>
                 <p className="batch_heading_p">Available Seats : <span className='full'>10 Seats Left</span></p>
                 <br />
               </div>

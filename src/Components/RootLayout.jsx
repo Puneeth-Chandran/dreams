@@ -54,8 +54,8 @@ const RootLayout = () => {
               <Nav className="ms-auto nav_list_items">
                 <Nav.Link href="#home" className='nav_link me-3' activeClassName='active'  onClick={scrollToTop} >Home</Nav.Link>
                 <Nav.Link href="#course" className='nav_link me-3' activeClassName='active'  onClick={scrollToTop}>Course</Nav.Link>
-                <Nav.Link href="#placement" className='nav_link me-3' activeClassName='active' onClick={scrollToTop}>Placement</Nav.Link>
-                <Nav.Link href="#testimonial" className='nav_link me-3' activeClassName='active' onClick={scrollToTop}>Testimonial</Nav.Link>
+                {/* <Nav.Link href="#placement" className='nav_link me-3' activeClassName='active' onClick={scrollToTop}>Placement</Nav.Link>
+                <Nav.Link href="#testimonial" className='nav_link me-3' activeClassName='active' onClick={scrollToTop}>Testimonial</Nav.Link> */}
                 <Nav.Link href="#profolio" className='nav_link me-3' activeClassName='active' onClick={scrollToTop}>Portfolio</Nav.Link>
                 <Nav.Link href="#about"  className='nav_link me-3' activeClassName='active' onClick={scrollToTop} >About us</Nav.Link>
                 <Nav.Link as={Link} to='contact'  className='nav_link me-3' activeClassName='active' onClick={scrollToTop}>Contact us</Nav.Link>

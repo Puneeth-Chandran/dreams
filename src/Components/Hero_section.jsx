@@ -59,7 +59,7 @@ const Hero_section = () => {
                 </h1>
                 <div className="admission mt-5">
                   <p className="admission_h4">
-                    - Admission Open for March 2024!
+                    - Admission Open for June and July 2024!
                   </p>
                 </div>
 
