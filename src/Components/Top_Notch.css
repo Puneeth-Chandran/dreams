@@ -208,35 +208,36 @@ margin-top: 30PX;
   
   @media only screen and (max-width: 561px) {
     .tool_image_bg{
-      width: 60%;
+      width: 40%;
     }
- .tool_image{
-  width: 20%;
-left:20%;
-top: 15%;
+ .tool_image_1{
+  position: absolute;
+  top: 18px;
+  left: 34px;
+  width: 13%;
  }
 
  .tool_image_2{
-  width: 30%;
-  left:15%;
+  width: 19%;
+  left: 11%;
   top: 40%;
    }
 
    .tool_image_3{
-    width: 30%;
-    left:14%;
-    top: 15%;
+    width: 20%;
+    left: 9%;
+    top: 17%;
      }
 
      .tool_image_4{
-      width: 30%;
-      left:15%;
-      top: 15%;
+      width: 20%;
+    left: 9%;
+    top: 17%;
        }
 
        .tool_image_5{
-        width: 30%;
-        left:14%;
+        width: 20%;
+        left: 10%;
         top: 22%;
          }
 
